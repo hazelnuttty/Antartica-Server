@@ -167,6 +167,12 @@
         .status.offline {
             background-color: #f44336;
         }
+        .status.notrespoding {
+            background-color: #0000FF;
+        }
+         .status.maintenance {
+            background-color: #FFFF00;
+         }
         #server-url {
             display: none;
             margin-top: 20px;
@@ -243,6 +249,8 @@
 </style>
 </section>
 
+<font color="red">INDO</font><font color="white">NESIA</font>
+
 <script>
     function updateUptime() {
         const startTime = new Date("2025-04-01T00:00:00Z");
@@ -273,10 +281,11 @@
         <p><strong>Platform:</strong> Linux</p>
     </section>
     
-    <section id="server-status" class="status online">
-        Server Status: Online
+    <section id="server-status" class="status offline">
+        Server Status: Offline until further notice 
     </section>
     
+
     <footer>
         <p>&copy; 2025 Antartica Server. All rights reserved.</p>
     </footer>
@@ -313,5 +322,5 @@
             });
         });
     </script>
-</body>
+  </body>
 </html>
